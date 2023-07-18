@@ -1,6 +1,6 @@
 <?php 
 session_start();
-include('LVO/conexion.php');
+include('microsoft/conexion.php');
 $id=$_REQUEST['ID'];
 $comentario=$_REQUEST['comentario'];
 $nombre=$_SESSION['Nombre'];

@@ -1,0 +1,10 @@
+.tabla_tecnicos {
+    display: flex;
+   flex-direction: column;
+  }
+  
+  .tabla_tecnicos .row {
+    display: flex;
+    flex-direction: row;
+   
+  }

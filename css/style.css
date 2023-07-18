@@ -128,7 +128,6 @@ input{
   text-align: center;
 }
 
-
 /*  /me*/
 /* -****** Administrar*******/
 .tablaadmin{
@@ -355,7 +354,7 @@ p.info:hover span{ /*the span will display just on :hover state*/
 #modal:target, #modalsinsesion:target  {
   opacity: 1;
   top: 50%;
-  visibility: visible
+  visibility: visible;
 }
 #modal .header, #modal .footer, #modalsinsesion .header, #modalsinsesion .footer {
   border-bottom: 1px solid #1ABC9C;

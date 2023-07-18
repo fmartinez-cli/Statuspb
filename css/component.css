@@ -52,7 +52,6 @@
   font-size: 1.2em;
   line-height: 3em;
   display: inline-block;
-  position: relative;
   z-index: 10000;
   outline: none;
 }

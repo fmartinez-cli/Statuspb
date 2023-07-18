@@ -1,6 +1,6 @@
 <?php
 
-include('LVO/conexion.php');
+include('microsoft/conexion.php');
 
 session_start();
 ?>
@@ -77,7 +77,7 @@ session_start();
 		</div>
 	</section>
 
-	<!-- ********************ccomentario perosnal***********************************-->
+	<!-- ********************ccomentario personal***********************************-->
 
 
 	<?php if(isset($_SESSION['No_Reloj'])){

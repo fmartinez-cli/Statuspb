@@ -1,6 +1,6 @@
 <?php
 
-include('LVO/conexion.php');
+include('microsoft/conexion.php');
 
 $id=$_GET['id'];
 $consulta=mysqli_query($enlace,"SELECT * FROM imagenes WHERE id='$id'");
