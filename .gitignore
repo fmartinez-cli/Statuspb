@@ -1,0 +1,49 @@
+# === ARCHIVOS DEL SISTEMA ===
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# === ARCHIVOS DE RESPALDO ===
+*.log
+*.tmp
+*.bak
+*.old
+*~
+
+# === CARPETAS DE OTRAS ÁREAS (ya eliminadas) ===
+/microsoft/LVO/
+/microsoft/JV/
+
+# === ARCHIVOS DE CONFIGURACIÓN LOCAL ===
+/config/local.php
+.env
+*.local
+
+# === CACHÉ Y TEMPORALES ===
+/cache/
+/temp/
+/tmp/
+
+# === ARCHIVOS DE IDE ===
+.vscode/
+.idea/
+*.sublime-*
+
+# === CARPETAS DEL SISTEMA ===
+logs/
+backup/
+uploads/temp/
+
+# === ARCHIVOS DE BASE DE DATOS ===
+*.sql
+*.sqlite
+*.db
+
+# === ARCHIVOS DE COMPOSER ===
+/vendor/
+composer.lock
+
+# === NOTA: No ignorar archivos importantes ===
+# !README.md
+# !LICENSE
+# !NOTICE
