@@ -23,10 +23,7 @@ session_start();
     <?php include('css/themes.php'); ?>
 
     <style>
-        /* =====================================================
-           FIX: style.css tiene ul/li/nav globales que rompen
-           los dropdowns de Bootstrap
-        ====================================================== */
+       
         nav.navbar { margin-top: 0 !important; }
 
         nav.navbar ul,
