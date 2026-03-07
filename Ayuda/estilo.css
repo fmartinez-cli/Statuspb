@@ -1,0 +1,60 @@
+* {
+	padding: 0;
+	margin:  0;
+
+}
+
+header{
+	width: 100%;
+	background-color: #3e3e3e;
+	color:white;
+	text-align: center;
+	padding: 10px;
+	}
+a{
+	text-decoration: none;
+	color: white;
+	font-size: 2em;
+	margin-left: 10px;
+	}
+.descripcion{
+	text-align: center;
+	padding: 20px;
+	height: 1000px;
+}
+.descripcion p{
+	text-align: justify;
+	padding: 30px;
+}
+details summary::-webkit-details-marker {
+display: none;
+}
+.funciones{
+	height: 1000px;
+	text-align: center;
+}
+.funciones h1{
+	padding: 10px;
+	font-size: 2em;
+}
+.funciones summary{
+	font-size: 2em;
+	color: #2574a9;
+	cursor: pointer;
+}
+.adentro{
+	background-color: #2574a9;
+}
+.adentro summary{
+	color: white;
+	cursor: pointer;
+}
+.parrafo{
+	background-color: white;
+	padding: 30px;
+	font-size: 20px;
+
+}
+.funciones details{
+	padding: 30px;
+}

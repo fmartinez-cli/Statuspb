@@ -1,0 +1,1815 @@
+========== 2026-02-28 09:03:15 ==========
+NoSerie: R123456798
+test: 
+status2_fto: Running
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 09:03:10
+====================================
+
+========== 2026-02-28 09:11:42 ==========
+NoSerie: R123456798
+test: 
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 09:11:36
+====================================
+
+========== 2026-02-28 09:12:08 ==========
+NoSerie: R123456798
+test: 
+status2_fto: Running
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 09:12:03
+====================================
+
+========== 2026-02-28 17:27:49 ==========
+NoSerie: R12345679874564F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 17:27:30
+====================================
+
+========== 2026-02-28 17:27:55 ==========
+NoSerie: R12345679874564F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 17:27:30
+====================================
+
+========== 2026-02-28 18:07:24 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: Running
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:07:15
+====================================
+
+========== 2026-02-28 18:34:00 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: Running
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-02-28 18:34:31 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: Fail
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-02-28 18:34:48 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-02-28 18:34:56 ==========
+NoSerie: R12345679874564F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-02-28 18:37:57 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:37:52
+====================================
+
+========== 2026-02-28 18:39:30 ==========
+NoSerie: R12345679812345F
+test: 
+status2_fto: Running
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:39:25
+====================================
+
+========== 2026-02-28 18:50:44 ==========
+NoSerie: R12345679874564F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-02-28 18:51:20 ==========
+NoSerie: R12345679812345F
+test: fto
+status2_fto: Running
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-02-28 18:51:27 ==========
+NoSerie: R12345799874564F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:51:23
+====================================
+
+========== 2026-02-28 18:51:35 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:51:29
+====================================
+
+========== 2026-02-28 18:51:45 ==========
+NoSerie: R12345679812345F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:51:41
+====================================
+
+========== 2026-02-28 18:57:06 ==========
+NoSerie: R12345671597564F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:56:55
+====================================
+
+========== 2026-02-28 18:57:15 ==========
+NoSerie: R78945679874564F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:57:10
+====================================
+
+========== 2026-02-28 18:57:23 ==========
+NoSerie: R12345677891594F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:57:19
+====================================
+
+========== 2026-02-28 18:57:27 ==========
+NoSerie: R12341379462564F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:57:24
+====================================
+
+========== 2026-02-28 18:57:32 ==========
+NoSerie: R12345679815682F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:57:29
+====================================
+
+========== 2026-02-28 18:58:00 ==========
+NoSerie: R12345799874564F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:57:40
+====================================
+
+========== 2026-02-28 18:58:15 ==========
+NoSerie: R78945679874564F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:58:12
+====================================
+
+========== 2026-02-28 18:58:22 ==========
+NoSerie: R12345677891594F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 18:58:18
+====================================
+
+========== 2026-02-28 22:09:11 ==========
+NoSerie: R12345679815682F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 22:09:06
+====================================
+
+========== 2026-02-28 22:09:16 ==========
+NoSerie: R12345671597564F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 22:09:13
+====================================
+
+========== 2026-02-28 22:09:26 ==========
+NoSerie: R12345679781235F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 22:09:18
+====================================
+
+========== 2026-02-28 22:09:34 ==========
+NoSerie: R12345671111111F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 22:09:32
+====================================
+
+========== 2026-02-28 22:09:42 ==========
+NoSerie: R12341379462564F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 22:09:38
+====================================
+
+========== 2026-02-28 22:09:47 ==========
+NoSerie: R12345679781235F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 22:09:43
+====================================
+
+========== 2026-02-28 22:09:52 ==========
+NoSerie: R12345671111111F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 22:09:48
+====================================
+
+========== 2026-02-28 23:42:13 ==========
+NoSerie: R12345679815682F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-02-28 23:43:41 ==========
+NoSerie: R12345679815682F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 23:43:37
+====================================
+
+========== 2026-02-28 23:59:35 ==========
+NoSerie: R12345679874564F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 23:59:26
+====================================
+
+========== 2026-03-01 00:00:00 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-02-28 23:59:54
+====================================
+
+========== 2026-03-01 01:16:19 ==========
+NoSerie: R12345679874564F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-01 02:55:46 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:55:41
+====================================
+
+========== 2026-03-01 02:55:51 ==========
+NoSerie: R12345679877899F
+test: 
+status2_fto: Running
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:55:47
+====================================
+
+========== 2026-03-01 02:55:55 ==========
+NoSerie: R12345679872222F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:55:52
+====================================
+
+========== 2026-03-01 02:55:59 ==========
+NoSerie: R12345679873333F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:55:57
+====================================
+
+========== 2026-03-01 02:56:04 ==========
+NoSerie: R12345679874444F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:56:01
+====================================
+
+========== 2026-03-01 02:56:11 ==========
+NoSerie: R12345679875555F
+test: 
+status2_fto: Running
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:56:07
+====================================
+
+========== 2026-03-01 02:56:15 ==========
+NoSerie: R12345679876666F
+test: 
+status2_fto: Fail
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:56:12
+====================================
+
+========== 2026-03-01 02:56:20 ==========
+NoSerie: R12345679877777F
+test: fto
+status2_fto: Waiting
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:56:17
+====================================
+
+========== 2026-03-01 02:56:29 ==========
+NoSerie: R12345679878888F
+test: fto
+status2_fto: Fail
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:56:21
+====================================
+
+========== 2026-03-01 02:56:41 ==========
+NoSerie: R12345679878989F
+test: 
+status2_fto: Fail
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:56:33
+====================================
+
+========== 2026-03-01 02:56:53 ==========
+NoSerie: R12345679872222F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:56:50
+====================================
+
+========== 2026-03-01 02:56:57 ==========
+NoSerie: R12345679873333F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:56:54
+====================================
+
+========== 2026-03-01 02:57:01 ==========
+NoSerie: R12345679874444F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:56:58
+====================================
+
+========== 2026-03-01 02:57:05 ==========
+NoSerie: R12345679877777F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:57:02
+====================================
+
+========== 2026-03-01 02:57:10 ==========
+NoSerie: R12345679878888F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 02:57:07
+====================================
+
+========== 2026-03-01 04:38:32 ==========
+NoSerie: R12345679876666F
+test: fto
+status2_fto: Fail
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-01 04:38:40 ==========
+NoSerie: R12345679878989F
+test: fto
+status2_fto: Fail
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-01 04:38:55 ==========
+NoSerie: R12345679872222F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-01 04:39:05 ==========
+NoSerie: R12345679874444F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-01 04:39:09 ==========
+NoSerie: R12345679874564F
+test: stress
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-01 04:39:20 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 04:39:15
+====================================
+
+========== 2026-03-01 04:39:25 ==========
+NoSerie: R12345679876666F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 04:39:22
+====================================
+
+========== 2026-03-01 04:39:30 ==========
+NoSerie: R12345679878989F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 04:39:26
+====================================
+
+========== 2026-03-01 04:39:34 ==========
+NoSerie: R12345679874444F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 04:39:31
+====================================
+
+========== 2026-03-01 04:39:43 ==========
+NoSerie: R12345679872222F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 04:39:39
+====================================
+
+========== 2026-03-01 04:39:50 ==========
+NoSerie: R12345679877899F
+test: fto
+status2_fto: Running
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-01 04:39:56 ==========
+NoSerie: R12345679875555F
+test: fto
+status2_fto: Running
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-01 04:40:02 ==========
+NoSerie: R12345679877899F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 04:39:58
+====================================
+
+========== 2026-03-01 04:40:07 ==========
+NoSerie: R12345679875555F
+test: 
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-01 04:40:03
+====================================
+
+========== 2026-03-04 11:12:41 ==========
+NoSerie: R12345679878989F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 11:13:03 ==========
+NoSerie: R12345679878989F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 11:12:52
+====================================
+
+========== 2026-03-04 11:52:10 ==========
+NoSerie: R12345679874564F
+test: mdaas
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 11:52:17 ==========
+NoSerie: R12345679877899F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 11:52:21 ==========
+NoSerie: R12345679875555F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 11:52:25 ==========
+NoSerie: R12345679876666F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 11:52:30 ==========
+NoSerie: R12345679877777F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 11:52:33 ==========
+NoSerie: R12345679878888F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 11:53:06 ==========
+NoSerie: R12345679878989F
+test: stress
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 11:53:20 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: Running
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 11:53:09
+====================================
+
+========== 2026-03-04 11:53:25 ==========
+NoSerie: R12345679877899F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 11:53:22
+====================================
+
+========== 2026-03-04 11:53:29 ==========
+NoSerie: R12345679875555F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 11:53:26
+====================================
+
+========== 2026-03-04 11:53:33 ==========
+NoSerie: R12345679876666F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 11:53:30
+====================================
+
+========== 2026-03-04 11:53:37 ==========
+NoSerie: R12345679877777F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 11:53:34
+====================================
+
+========== 2026-03-04 11:53:42 ==========
+NoSerie: R12345679878888F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 11:53:38
+====================================
+
+========== 2026-03-04 11:53:47 ==========
+NoSerie: R12345679878989F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 11:53:43
+====================================
+
+========== 2026-03-04 20:23:18 ==========
+NoSerie: R12345679874564F
+test: racktest
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: Running
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 20:23:24 ==========
+NoSerie: R12345679877899F
+test: stress
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 20:23:27 ==========
+NoSerie: R12345679872222F
+test: stress
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 20:23:31 ==========
+NoSerie: R12345679873333F
+test: quicktest
+status2_fto: 
+status2_quicktest: Running
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 20:23:34 ==========
+NoSerie: R12345679874444F
+test: stress
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 20:23:38 ==========
+NoSerie: R12345679875555F
+test: stress
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 20:23:41 ==========
+NoSerie: R12345679876666F
+test: stress
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 20:23:44 ==========
+NoSerie: R12345679877777F
+test: stress
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 20:23:48 ==========
+NoSerie: R12345679878888F
+test: stress
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 20:23:51 ==========
+NoSerie: R12345679878989F
+test: mdaas
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 20:24:00 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: Running
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 20:23:53
+====================================
+
+========== 2026-03-04 20:24:05 ==========
+NoSerie: R12345679877899F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 20:24:01
+====================================
+
+========== 2026-03-04 20:24:09 ==========
+NoSerie: R12345679872222F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 20:24:06
+====================================
+
+========== 2026-03-04 20:24:12 ==========
+NoSerie: R12345679873333F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: Running
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 20:24:09
+====================================
+
+========== 2026-03-04 20:24:15 ==========
+NoSerie: R12345679874444F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 20:24:13
+====================================
+
+========== 2026-03-04 20:24:19 ==========
+NoSerie: R12345679875555F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 20:24:17
+====================================
+
+========== 2026-03-04 20:24:22 ==========
+NoSerie: R12345679876666F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 20:24:20
+====================================
+
+========== 2026-03-04 20:24:25 ==========
+NoSerie: R12345679877777F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 20:24:23
+====================================
+
+========== 2026-03-04 20:24:28 ==========
+NoSerie: R12345679878888F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 20:24:26
+====================================
+
+========== 2026-03-04 20:24:31 ==========
+NoSerie: R12345679878989F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: Running
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 20:24:29
+====================================
+
+========== 2026-03-04 20:32:07 ==========
+NoSerie: R12345679874564F
+test: fti
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: Running
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 20:32:19 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 20:32:15
+====================================
+
+========== 2026-03-04 22:52:22 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 22:52:17
+====================================
+
+========== 2026-03-04 22:52:30 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 22:52:27
+====================================
+
+========== 2026-03-04 22:52:39 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 22:52:34
+====================================
+
+========== 2026-03-04 22:54:05 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 22:53:56
+====================================
+
+========== 2026-03-04 22:54:10 ==========
+NoSerie: R12345679877899F
+test: mdaas
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-04 22:54:15 ==========
+NoSerie: R12345679877899F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: Running
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-04 22:54:12
+====================================
+
+========== 2026-03-05 08:35:40 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-05 08:35:34
+====================================
+
+========== 2026-03-05 08:49:36 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-05 08:49:31
+====================================
+
+========== 2026-03-05 08:51:06 ==========
+NoSerie: R12345679875555F
+test: mdaas
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: Running
+status2_racktest: 
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-05 08:51:12 ==========
+NoSerie: R12345679875555F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: Running
+status2_fti: 
+status2_bootstrap: 
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-05 08:51:08
+====================================
+
+========== 2026-03-05 08:59:20 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bsl: Running
+status2_cts: 
+status2_packing: 
+HoraInicial: 2026-03-05 08:59:17
+====================================
+
+========== 2026-03-05 09:01:25 ==========
+NoSerie: R12345679874564F
+test: bsl
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bsl: Running
+status2_cts: 
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-05 09:01:37 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bsl: 
+status2_cts: Running
+status2_packing: 
+HoraInicial: 2026-03-05 09:01:30
+====================================
+
+========== 2026-03-05 09:01:46 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bsl: 
+status2_cts: Running
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-05 09:01:51 ==========
+NoSerie: R12345679874564F
+test: cts
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bsl: 
+status2_cts: Running
+status2_packing: 
+HoraInicial: 
+====================================
+
+========== 2026-03-05 09:01:59 ==========
+NoSerie: R12345679874564F
+test: 
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bsl: 
+status2_cts: 
+status2_packing: Running
+HoraInicial: 2026-03-05 09:01:53
+====================================
+
+========== 2026-03-05 09:02:09 ==========
+NoSerie: R12345679874564F
+test: packing
+status2_fto: 
+status2_quicktest: 
+status2_stress: 
+status2_mdaas: 
+status2_racktest: 
+status2_fti: 
+status2_bsl: 
+status2_cts: 
+status2_packing: Running
+HoraInicial: 
+====================================
+
