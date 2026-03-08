@@ -1,7 +1,0 @@
-
-<h1>Fecha entrega estatus:  2016-10-05 06:41:39 </h1>
- Entrega: 54123  Recibe: 54121 
- CT gbic: 1GIBIC1111  Bahia: 1  Rack:   Disponible: 1  Falla: 0  Fecha de registro: 2016-10-04 08:11:50  Fecha de falla:   Responsable: 54121 
- CT gbic: 2GIBIC2222  Bahia: 1  Rack:   Disponible: 1  Falla: 0  Fecha de registro: 2016-10-04 08:12:49  Fecha de falla:   Responsable: 54121 
-------------------------- 
- 
