@@ -399,7 +399,7 @@ require_once dirname(__DIR__) . '/bootstrap.php';
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
 
                 <li class="nav-item">
-                    <a class="nav-link" href="/Statuspb/modules/generic/pages/index.php">
+                    <a class="nav-link" href="/Statuspb/index.php">
                         <i class="fas fa-home me-1"></i>Home
                     </a>
                 </li>
