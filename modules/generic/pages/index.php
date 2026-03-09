@@ -8,10 +8,10 @@ if (session_status() == PHP_SESSION_NONE) {
 require_once dirname(__DIR__) . '/bootstrap.php';
 
 // Obtener estadísticas generales para el dashboard
-$total_racks = mysqli_fetch_assoc(mysqli_query($enlace, "SELECT COUNT(*) as count FROM racks"))['count'];
-$active_racks = mysqli_fetch_assoc(mysqli_query($enlace, "SELECT COUNT(*) as count FROM racks WHERE work_order IS NOT NULL AND work_order != ''"))['count'];
-$total_racks_today = mysqli_fetch_assoc(mysqli_query($enlace, "SELECT COUNT(*) as count FROM racks WHERE DATE(created_at) = CURDATE()"))['count'];
-$total_users = mysqli_fetch_assoc(mysqli_query($enlace, "SELECT COUNT(*) as count FROM users WHERE is_active = 1"))['count'];
+$total_racks = mysqli_fetch_assoc(mysqli_query($enlace, "SELECT COUNT(*) as count FROM racks"))['count'] ?? 0;
+$active_racks = mysqli_fetch_assoc(mysqli_query($enlace, "SELECT COUNT(*) as count FROM racks WHERE work_order IS NOT NULL AND work_order != ''"))['count'] ?? 0;
+$total_racks_today = mysqli_fetch_assoc(mysqli_query($enlace, "SELECT COUNT(*) as count FROM racks WHERE DATE(created_at) = CURDATE()"))['count'] ?? 0;
+$total_users = mysqli_fetch_assoc(mysqli_query($enlace, "SELECT COUNT(*) as count FROM users WHERE is_active = 1"))['count'] ?? 0;
 
 // Obtener racks activos recientes
 $recent_racks = mysqli_query($enlace, "SELECT r.serial_number, r.location_code, r.work_order, 
@@ -30,10 +30,6 @@ $recent_tests = mysqli_query($enlace, "SELECT tr.*, r.serial_number, r.location_
                                        JOIN test_catalog tc ON tr.test_code = tc.test_code
                                        ORDER BY tr.end_time DESC
                                        LIMIT 10");
-?>
-<?php
-// Incluir el index real desde modules/generic/pages/
-require_once __DIR__ . '/modules/generic/pages/index.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -264,7 +260,7 @@ require_once __DIR__ . '/modules/generic/pages/index.php';
             <div class="container">
                 <header class="clearfix header2">
                     <span>Testing Engineering</span>
-                    <a href="index.php"><h1><i class="fa fa-server" aria-hidden="true"></i> Test Dashboard</h1></a>
+                    <a href="/Statuspb/"><h1><i class="fa fa-server" aria-hidden="true"></i> Test Dashboard</h1></a>
 
                     <?php if(isset($_SESSION['Nombre'])): ?>
                     <div class="nombre" style="left:1em; height:20px; width:30%; text-align:left;">
@@ -289,7 +285,7 @@ require_once __DIR__ . '/modules/generic/pages/index.php';
         <div class="collapse navbar-collapse" id="navbarMain">
             <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" href="index.php"><i class="fas fa-home me-1"></i>Home</a>
+                    <a class="nav-link active" href="/Statuspb/"><i class="fas fa-home me-1"></i>Home</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Line 1</a>
