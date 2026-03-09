@@ -67,7 +67,7 @@ generic/
 │   └── manual.php             # Inline user manual
 ├── dist/
 │   ├── Chart.bundle.js / .min.js
-│   └── statuspb.sql           # Database schema and seed data
+│   └── factory_test_system.sql           # Database schema and seed data
 ├── js/                        # Third-party and custom JS libraries
 ├── fonts/                     # Font Awesome + Glyphicons
 └── img/                       # UI images and icons
