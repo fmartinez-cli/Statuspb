@@ -19,72 +19,10 @@ Real-time server monitoring dashboard (node, server, and work order levels).
 - PHP, MySQL, HTML/CSS, JavaScript
 - Bootstrap 5 for responsive design
 
-================================================================================
-                    TEST DASHBOARD - PROJECT STRUCTURE
-================================================================================
+<img width="566" height="595" alt="image" src="https://github.com/user-attachments/assets/fcd1c835-76ae-4c8e-87cd-95b68a70c538" />
 
-STATUSPB/
-│
-├── 📁 .git/                      # Version control
-├── 📄 .gitignore                  # Git ignore file
-├── 📄 README.md                   # Project documentation
-├── 📄 LICENSE                      # MIT License
-│
-├── 🐘 index.php                     # Main entry point
-├── 🐘 conexion.php                  # Database connection
-│
-├── 📁 modules/                      # Core application
-│   └── 📁 generic/
-│       ├── 🐘 bootstrap.php          # Bootstrap loader
-│       │
-│       ├── 📁 config/                # Configuration
-│       │   ├── 🐘 functions.php
-│       │   ├── 🐘 queries.php
-│       │   └── 🐘 unit_config.php
-│       │
-│       └── 📁 pages/                  # Application pages
-│           ├── 🐘 index.php             # Dashboard home
-│           ├── 🐘 bay1.php - bay10.php  # Bay pages
-│           ├── 🐘 bay_table.php         # Bay table view
-│           ├── 🐘 status.php             # General status
-│           ├── 🐘 stats.php              # Statistics main
-│           ├── 🐘 wo_stats.php           # WO statistics
-│           ├── 🐘 export_wo.php          # Excel export
-│           ├── 🐘 admin_panel.php        # Admin panel
-│           ├── 🐘 login.php               # Login handler
-│           ├── 🐘 logout.php              # Logout handler
-│           ├── 🐘 modals.php              # Rack modals
-│           ├── 🐘 manual.php               # User manual
-│           └── 🐘 register_rack.php       # Rack registration
-│
-├── 📁 public/                     # Public assets
-│   ├── 📁 css/                      # Stylesheets
-│   │   ├── 🎨 style.css
-│   │   ├── 🎨 default.css
-│   │   ├── 🎨 bootstrap5.0.2.min.css
-│   │   └── 🎨 dataTables/
-│   │
-│   ├── 📁 js/                       # JavaScript
-│   │   ├── 📜 functions.js
-│   │   ├── 📜 bootstrap.min.js
-│   │   ├── 📜 jquery.js
-│   │   └── 📁 dataTables/
-│   │
-│   └── 📁 img/                      # Images
-│       ├── 🖼️ checkicon.png
-│       ├── 🖼️ try6.jpg
-│       └── 🖼️ admin.png
-│
-├── 📁 dist/                       # Distribution
-│   ├── 📜 Chart.js
-│   └── 🗄️ statuspb.sql              # Database dump
-│
-└── 📁 fonts/                      # Font Awesome
-    └── 📁 font-awesome/
+ DATABASE SCHEMA
 
-================================================================================
-                         DATABASE SCHEMA
-================================================================================
 
 📊 factory_test_system
 ├── users
@@ -96,28 +34,6 @@ STATUSPB/
 ├── audit_log
 ├── business_units
 └── model_test_sequence
-
-================================================================================
-                         ACCESS LEVELS
-================================================================================
-
-👤 Level 1  - Technician
-👥 Level 3  - Engineer/Leader
-👑 Level 99 - Administrator
-
-================================================================================
-                         MAIN FEATURES
-================================================================================
-
-🏠 Home Dashboard     → Overview & quick access
-📊 Bay Pages (1-10)   → Individual bay management
-📈 Statistics         → WO search & analytics
-📉 WO Statistics      → Detailed WO performance
-📋 General Status     → Overall system status
-👤 Admin Panel        → User & rack management
-📝 Personal Notepad   → User notes (3 tabs)
-📚 User Manual        → Help documentation
-📎 Export to Excel    → Data export
 
 ## 📌 Key Features in Detail
 
