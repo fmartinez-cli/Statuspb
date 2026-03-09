@@ -42,7 +42,9 @@ $query = "INSERT INTO racks (unit_id, serial_number, work_order, sku, bay_number
 if (mysqli_query($enlace, $query)) {
     $rack_id = mysqli_insert_id($enlace);
     
-    // If a specific model was selected, initialize test results based on the model's test sequence
+    // ============================================
+    // SOLUCIÓN 1: Iniciar el primer test automáticamente
+    // ============================================
     if ($model != 'available') {
         // Fetch test sequence for the selected model
         $seq_query = "SELECT test_code FROM model_test_sequence 
@@ -50,9 +52,20 @@ if (mysqli_query($enlace, $query)) {
         $seq_result = mysqli_query($enlace, $seq_query);
         
         $sequence = 1;
+        $now = date('Y-m-d H:i:s'); // Hora actual
+        
         while ($test = mysqli_fetch_assoc($seq_result)) {
-            $insert_test = "INSERT INTO test_results (rack_id, test_code, sequence_order, status, created_at)
-                           VALUES ($rack_id, '{$test['test_code']}', $sequence, 'pending', NOW())";
+            if ($sequence == 1) {
+                // ✅ PRIMER TEST: Inicia inmediatamente con waiting y start_time
+                $insert_test = "INSERT INTO test_results 
+                               (rack_id, test_code, sequence_order, status, status_time, start_time, created_at)
+                               VALUES ($rack_id, '{$test['test_code']}', $sequence, 'waiting', '$now', '$now', NOW())";
+            } else {
+                // Tests siguientes: pending sin start_time
+                $insert_test = "INSERT INTO test_results 
+                               (rack_id, test_code, sequence_order, status, created_at)
+                               VALUES ($rack_id, '{$test['test_code']}', $sequence, 'pending', NOW())";
+            }
             mysqli_query($enlace, $insert_test);
             $sequence++;
         }

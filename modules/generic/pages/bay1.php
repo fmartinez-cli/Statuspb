@@ -1,5 +1,6 @@
 ﻿<?php
 require_once dirname(__DIR__) . '/bootstrap.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -13,13 +14,12 @@ require_once dirname(__DIR__) . '/bootstrap.php';
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Original styles -->
-    <link rel="stylesheet" href="/Statuspb/css/style.css">
-    <link rel="stylesheet" href="/Statuspb/css/popup.css">
-    <link rel="stylesheet" href="/Statuspb/css/default.css">
-    <link rel="shortcut icon" href="/Statuspb/img/checkicon.png">
+    <link rel="stylesheet" href="/Statuspb/public/css/style.css">
+    <link rel="stylesheet" href="/Statuspb/public/css/popup.css">
+    <link rel="stylesheet" href="/Statuspb/public/css/default.css">
+    <link rel="shortcut icon" href="/Statuspb/public/img/checkicon.png">
 
     <style>
-       
         nav.navbar { margin-top: 0 !important; }
 
         nav.navbar ul,
@@ -108,72 +108,72 @@ require_once dirname(__DIR__) . '/bootstrap.php';
         }
 
         /* =====================================================
-           TEST RACK BOXES
+           TEST RACK BOXES - AGRANDADOS
         ====================================================== */
-.tr-box {
-    width: 205px;
-    height: 140px;
-    border-radius: 6px;
-    transition: transform 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    overflow: hidden;
-}
-.tr-box:hover {
-    transform: scale(1.05);
-}
-.model-a { background-color: #2574A9; } /* Model A - Blue */
-.model-b { background-color: #049372; } /* Model B - Green */
-.model-c { background-color: #3e3e3e; } /* Model C - Gray */
-.model-d { background-color: #e26715; } /* Model D - Orange */
+        .tr-box {
+            width: 300px;        
+            height: 170px;       
+            border-radius: 8px;
+            transition: transform 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            overflow: hidden;
+        }
+        .tr-box:hover {
+            transform: scale(1.05);
+        }
+        .model-a { background-color: #2574A9; } /* Model A - Blue */
+        .model-b { background-color: #049372; } /* Model B - Green */
+        .model-c { background-color: #3e3e3e; } /* Model C - Gray */
+        .model-d { background-color: #e26715; } /* Model D - Orange */
 
-.tr-box a {
-    color: white;
-    text-decoration: none;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.tr-content {
-    width: 100%;
-    padding: 10px 6px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-.tr-title {
-    font-weight: bold;
-    font-size: 19px;
-    margin-bottom: 8px;
-    white-space: nowrap;
-    line-height: 1.2;
-}
-.tr-test {
-    font-size: 20px;
-    margin-bottom: 8px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    line-height: 1.2;
-}
-/* Colored spans inherit size */
-.tr-test span {
-    font-size: 20px;
-    font-weight: bold;
-}
-.tr-serial {
-    font-size: 19px;
-    word-break: break-all;
-    overflow-wrap: break-word;
-    max-width: 189px;
-    margin: 0 auto;
-    line-height: 1.3;
-    padding: 0 4px;
-}
+        .tr-box a {
+            color: white;
+            text-decoration: none;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .tr-content {
+            width: 100%;
+            padding: 12px 8px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+        .tr-title {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+            white-space: nowrap;
+            line-height: 1.2;
+        }
+        .tr-test {
+            font-size: 20px;
+            margin-bottom: 10px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 1.3;
+            padding: 0 2px;
+        }
+        .tr-test span {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .tr-serial {
+            font-size: 18px;
+            word-break: break-all;
+            overflow-wrap: break-word;
+            max-width: 280px;
+            margin: 0 auto;
+            line-height: 1.3;
+            padding: 0 4px;
+        }
 
         /* =====================================================
            FLOATING NOTEPAD
@@ -328,7 +328,7 @@ require_once dirname(__DIR__) . '/bootstrap.php';
                     <?php endif; ?>
                     <?php if(isset($_SESSION['Nombre']) && $_SESSION['Nivel'] == 1): ?>
                     <div style="position:absolute; right:5px; top:5px;">
-                        <a href="/Statuspb/modules/generic/pages/admin.php"><img width="25" src="/Statuspb/img/admin.png"></a>
+                        <a href="/Statuspb/modules/generic/pages/admin_panel.php"><img width="25" src="/Statuspb/img/admin.png"></a>
                     </div>
                     <?php endif; ?>
                 </header>
@@ -378,7 +378,7 @@ require_once dirname(__DIR__) . '/bootstrap.php';
     }
 </style>
 
-<a href="/Statuspb/modules/generic/pages/admin.php" class="admin-button" title="General Administration Panel">
+<a href="/Statuspb/modules/generic/pages/admin_panel.php" class="admin-button" title="General Administration Panel">
    <i class="fas fa-key"></i>
     <span>Admin</span>
     <span class="badge-admin">Gen</span>
@@ -574,63 +574,95 @@ require_once dirname(__DIR__) . '/bootstrap.php';
 ══════════════════════════════════════════════ -->
 <section class="container-fluid px-3 my-3">
 
-    <!-- ROW 1: TR01-01 to TR01-05 -->
-    <div class="d-flex flex-wrap gap-2 mb-2 justify-content-center">
-        <?php for($i = 1; $i <= 5; $i++):
-            $varModelo  = "contr$i";
-            $varNoSerie = "NoSerie$i";
-            $varPrueba  = "Prueba$i";
-
-            $boxClass = 'model-c';
-            if(isset($$varModelo['Modelo'])) {
-                if     ($$varModelo['Modelo'] == 'Microsoft 8.2') $boxClass = 'model-a';
-                elseif ($$varModelo['Modelo'] == 'Microsoft 8.3') $boxClass = 'model-b';
-                elseif ($$varModelo['Modelo'] == 'NPI')           $boxClass = 'model-d';
+  <!-- ROW 1: TR01-01 to TR01-05 -->
+<div class="d-flex flex-wrap gap-2 mb-2 justify-content-center">
+    <?php for($i = 1; $i <= 5; $i++):
+        $varNoSerie = "NoSerie$i";
+        $varPrueba  = "Prueba$i";
+        $varModelo  = "Modelo$i";
+        $contrVar   = "contr$i";
+        
+        $trNum = 'TR01-' . str_pad($i, 2, '0', STR_PAD_LEFT);
+        $testStatus = isset($$varPrueba) ? $$varPrueba : '&nbsp;';
+        $serialNum = isset($$varNoSerie) ? $$varNoSerie : 'Available';
+        
+        // Determinate box class based on model code, default to model-c (gray)
+        $boxClass = 'model-c';
+        
+        // Only check model code if there's a valid serial number (not "Available") and the variable is set
+        if ($serialNum != 'Available' && isset($$contrVar) && isset($$contrVar['model_code'])) {
+            switch ($$contrVar['model_code']) {
+                case 'A':
+                    $boxClass = 'model-a';
+                    break;
+                case 'B':
+                    $boxClass = 'model-b';
+                    break;
+                case 'D':
+                    $boxClass = 'model-d';
+                    break;
             }
-            $trNum = 'TR01-' . str_pad($i, 2, '0', STR_PAD_LEFT);
-        ?>
-        <div class="tr-box <?php echo $boxClass; ?>">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#modalRack"
-               data-serie="<?php echo htmlspecialchars($$varNoSerie ?? ''); ?>"
-               data-tr="<?php echo $trNum; ?>">
-                <div class="tr-content">
-                    <div class="tr-title"><?php echo $trNum; ?></div>
-                    <div class="tr-test"><?php echo $$varPrueba ?? ''; ?></div>
-                    <div class="tr-serial"><?php echo $$varNoSerie ?? ''; ?></div>
-                </div>
-            </a>
-        </div>
-        <?php endfor; ?>
+        }
+        // If serial number is "Available", we keep the default gray class regardless of model code
+    ?>
+    <div class="tr-box <?php echo $boxClass; ?>">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalRack"
+           data-serie="<?php echo htmlspecialchars($serialNum); ?>"
+           data-tr="<?php echo $trNum; ?>">
+            <div class="tr-content">
+                <div class="tr-title"><?php echo $trNum; ?></div>
+                <div class="tr-test"><?php echo $testStatus; ?></div>
+                <div class="tr-serial"><?php echo htmlspecialchars($serialNum); ?></div>
+            </div>
+        </a>
     </div>
+    <?php endfor; ?>
+</div>
 
     <!-- ROW 2: TR01-06 to TR01-10 -->
-    <div class="d-flex flex-wrap gap-2 justify-content-center">
-        <?php for($i = 6; $i <= 10; $i++):
-            $varModelo  = "contr$i";
-            $varNoSerie = "NoSerie$i";
-            $varPrueba  = "Prueba$i";
-
-            $boxClass = 'model-c';
-            if(isset($$varModelo['Modelo'])) {
-                if     ($$varModelo['Modelo'] == 'Microsoft 8.2') $boxClass = 'model-a';
-                elseif ($$varModelo['Modelo'] == 'Microsoft 8.3') $boxClass = 'model-b';
-                elseif ($$varModelo['Modelo'] == 'NPI')           $boxClass = 'model-d';
+<div class="d-flex flex-wrap gap-2 mb-2 justify-content-center">
+    <?php for($i = 6; $i <= 10; $i++):
+        $varNoSerie = "NoSerie$i";
+        $varPrueba  = "Prueba$i";
+        $varModelo  = "Modelo$i";
+        $contrVar   = "contr$i";
+        
+        $trNum = 'TR01-' . str_pad($i, 2, '0', STR_PAD_LEFT);
+        $testStatus = isset($$varPrueba) ? $$varPrueba : '&nbsp;';
+        $serialNum = isset($$varNoSerie) ? $$varNoSerie : 'Available';
+        
+        // Determinate box class based on model code, default to model-c (gray)
+        $boxClass = 'model-c';
+        
+        // Only check model code if there's a valid serial number (not "Available") and the variable is set
+        if ($serialNum != 'Available' && isset($$contrVar) && isset($$contrVar['model_code'])) {
+            switch ($$contrVar['model_code']) {
+                case 'A':
+                    $boxClass = 'model-a';
+                    break;
+                case 'B':
+                    $boxClass = 'model-b';
+                    break;
+                case 'D':
+                    $boxClass = 'model-d';
+                    break;
             }
-            $trNum = 'TR01-' . str_pad($i, 2, '0', STR_PAD_LEFT);
-        ?>
-        <div class="tr-box <?php echo $boxClass; ?>">
-            <a href="#" data-bs-toggle="modal" data-bs-target="#modalRack"
-               data-serie="<?php echo htmlspecialchars($$varNoSerie ?? ''); ?>"
-               data-tr="<?php echo $trNum; ?>">
-                <div class="tr-content">
-                    <div class="tr-title"><?php echo $trNum; ?></div>
-                    <div class="tr-test"><?php echo $$varPrueba ?? ''; ?></div>
-                    <div class="tr-serial"><?php echo $$varNoSerie ?? ''; ?></div>
-                </div>
-            </a>
-        </div>
-        <?php endfor; ?>
+        }
+        // If serial number is "Available", we keep the default gray class regardless of model code
+    ?>
+    <div class="tr-box <?php echo $boxClass; ?>">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#modalRack"
+           data-serie="<?php echo htmlspecialchars($serialNum); ?>"
+           data-tr="<?php echo $trNum; ?>">
+            <div class="tr-content">
+                <div class="tr-title"><?php echo $trNum; ?></div>
+                <div class="tr-test"><?php echo $testStatus; ?></div>
+                <div class="tr-serial"><?php echo htmlspecialchars($serialNum); ?></div>
+            </div>
+        </a>
     </div>
+    <?php endfor; ?>
+</div>
 
 </section>
 
@@ -654,7 +686,7 @@ require_once dirname(__DIR__) . '/bootstrap.php';
         }
     </style>
     <div class="iframe-container">
-        <iframe src="/Statuspb/modules/generic/pages/bay_table1.php" loading="lazy"></iframe>
+        <iframe src="/Statuspb/modules/generic/pages/bay_table.php" loading="lazy"></iframe>
     </div>
 </section>
 
@@ -854,8 +886,6 @@ require_once dirname(__DIR__) . '/bootstrap.php';
 <!-- ═══════════════════════════════════════════
      SCRIPTS — required order
 ══════════════════════════════════════════════ -->
-<script src="/Statuspb/js/dataTables/jquery-3.5.1.js"></script>
-<script src="/Statuspb/js/block.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 <script>
@@ -882,7 +912,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         modalTR.textContent = tr || 'Rack Details';
         modalBody.innerHTML = loadingHtml;
-console.log('Fetching:', 'modals.php?pb=' + serie + '&tr=' + tr);
+
         fetch('modals.php?pb=' + encodeURIComponent(serie) + '&tr=' + encodeURIComponent(tr))
             .then(r => r.ok ? r.text() : Promise.reject(r.status))
             .then(html => { modalBody.innerHTML = html; })
@@ -902,7 +932,7 @@ console.log('Fetching:', 'modals.php?pb=' + serie + '&tr=' + tr);
 </script>
 
 <?php if(isset($_SESSION['No_Reloj'])): ?>
-<center><a href="/Statuspb/img/stats.php" style="opacity:0;">.</a></center>
+<center><a href="/Statuspb/public/img/stats.php" style="opacity:0;">.</a></center>
 <?php endif; ?>
 </body>
 </html>

@@ -12,7 +12,7 @@ $location = mysqli_real_escape_string($enlace, $_POST['location'] ?? '');
 $technician = $_SESSION['No_Reloj'];
 $current_time = date('Y-m-d H:i:s');
 
-// Get all current test results for this rack
+// Get all current test results for this rack, ordered by sequence
 $tests_query = mysqli_query($enlace, "SELECT * FROM test_results WHERE rack_id = $rack_id ORDER BY sequence_order");
 $tests = [];
 while ($t = mysqli_fetch_assoc($tests_query)) {
@@ -28,12 +28,13 @@ foreach ($_POST['status'] as $test_id => $new_status) {
     
     $current_test = $tests[$test_id];
     $current_status = $current_test['status'];
+    $sequence = $current_test['sequence_order'];
     
-    // Determine which fields to update
+    // Determine which fields to update for this test
     $updates = [];
     $updates[] = "status = '$new_status'";
     
-    // Set start time if test is starting (was pending/waiting and now running)
+    // Set start time if test is starting (was pending/waiting and now running/waiting)
     if (($current_status == 'pending' || $current_status == 'waiting') && 
         ($new_status == 'running' || $new_status == 'waiting') && 
         empty($current_test['start_time'])) {
@@ -53,9 +54,38 @@ foreach ($_POST['status'] as $test_id => $new_status) {
         $updates[] = "technician_clock = '$technician'";
     }
     
-    // Update the test
+    // Update the current test
     $update_query = "UPDATE test_results SET " . implode(', ', $updates) . " WHERE id = $test_id";
     mysqli_query($enlace, $update_query);
+    
+    // ============================================
+    // IMPORTANTE: Si la prueba se completó (pass), activar la siguiente
+    // ============================================
+    if ($new_status == 'pass') {
+        // Buscar la siguiente prueba en la secuencia
+        $next_query = "SELECT id FROM test_results 
+                       WHERE rack_id = $rack_id 
+                       AND sequence_order = " . ($sequence + 1) . "
+                       LIMIT 1";
+        $next_result = mysqli_query($enlace, $next_query);
+        
+        if ($next_result && mysqli_num_rows($next_result) > 0) {
+            $next = mysqli_fetch_assoc($next_result);
+            $next_id = $next['id'];
+            
+            // Activar la siguiente prueba con waiting y start_time
+            $activate_query = "UPDATE test_results 
+                               SET status = 'waiting', 
+                                   status_time = '$current_time',
+                                   start_time = '$current_time',
+                                   technician_clock = '$technician'
+                               WHERE id = $next_id 
+                               AND status = 'pending'";
+            mysqli_query($enlace, $activate_query);
+            
+            error_log("Activada siguiente prueba para rack $rack_id: test_id $next_id");
+        }
+    }
 }
 
 // Check if all tests are now passed
