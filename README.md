@@ -188,7 +188,7 @@ This project is licensed under the [MIT License](LICENSE).
 
 **Fernando Martinez Barbosa**
 - LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- GitHub: [@fmartinez-cli](https://github.com/fmartinez-cli
+- GitHub: @fmartinez-cli(https://github.com/fmartinez-cli
 
 ---
 
