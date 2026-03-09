@@ -40,10 +40,11 @@ Real-time server monitoring dashboard (node, server, and work order levels).
 
 ## 🚀 Getting Started
 
-1. Clone the repository
-2. Import database schema
-3. Configure `statuspb.sql` with your credentials
-4. Run on your local server (XAMPP/WAMP/LAMP)
+1. Clone repository to C:\xampp\htdocs\Statuspb
+2. Import database: dist/factory_test_system.sql
+3. Configure database in modules/generic/bootstrap.php
+4. Access: http://localhost/Statuspb/
+5. Default admin: Clock: 99999 / Password: admin123
 
 ## 📄 License
 Apache License, Version 2.0
