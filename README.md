@@ -88,14 +88,14 @@ generic/
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/test-dashboard.git
+   git clone https://github.com/fmartinez-cli/Statuspb.git
    cd test-dashboard
    ```
 
 2. **Create the database**
    ```bash
    mysql -u root -p -e "CREATE DATABASE factory_test_system CHARACTER SET utf8mb4;"
-   mysql -u root -p factory_test_system < generic/dist/statuspb.sql
+   mysql -u root -p factory_test_system < generic/dist/factory_test_system.sql
    ```
 
 3. **Configure the connection**
