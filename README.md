@@ -1,42 +1,57 @@
-# 🖥️ Test Dashboard — Manufacturing Quality Control System
+# 🖥️ Test Dashboard — Manufacturing Communication & Monitoring System
 
-A web-based dashboard for real-time monitoring and management of rack testing in manufacturing environments. Built to support multi-line, multi-bay production floors with role-based access control, live test tracking, and statistical reporting.
+A real-time web communication and traceability system for production floors operating across rotating shifts. Designed for **Technicians, Jr. Engineers, Sr. Engineers, and Area Leaders** to share structured information across 3 to 6 shifts (morning, afternoon, night, and weekends) — without losing context between handoffs.
+
+> ⚡ Optimized to run on **HP T620 Thin Clients** (AMD GX-415GA · 4 GB RAM · Windows 8.1) — no installation required at the workstation.
 
 ---
 
 ## 📸 Screenshots
 
-> _Dashboard · Bay Status · Statistics_
-> _(Add screenshots of your running application here for maximum impact)_
+> _(Add screenshots of the dashboard, bay view, and statistics panel for maximum visual impact)_
+
+---
+
+## 🎯 Purpose
+
+In multi-shift manufacturing environments, critical information about rack status is frequently lost between shift handoffs. This system solves that problem by centralizing communication in a single web interface, tailored to the **role and responsibility of each user**:
+
+| Role | What the system provides |
+|---|---|
+| **Technician** | Views their assigned rack's status, tracks test progress, and leaves follow-up comments |
+| **Jr. Engineer** | Monitors all racks in their assigned bay, logs observations, and tracks progress per shift |
+| **Sr. Engineer / Area Leader** | Global view grouped by Work Order (WO); reviews comments, time statistics, and overall line status |
+| **Administrator** | Full user management, system configuration, and immutable audit log |
+
+Information flows from the individual rack → bay → Work Order → full line, regardless of which shift generated it.
 
 ---
 
 ## 🚀 Features
 
-- **Real-time Test Monitoring** — Track each rack's test status (PASS / FAIL / RUNNING / WAITING) per bay and production line.
-- **Multi-line Bay Layout** — Supports up to 5 production lines × 2 bays each (10 bays total), configurable per unit.
-- **Role-based Access Control** — Three user levels: Technician, Engineer/Leader, and Administrator (level 99).
-- **Work Order Management** — Associate racks to work orders (WO), filter and query by WO or model.
-- **Statistical Reports** — View time-based and WO-based performance metrics with interactive charts (Chart.js / ECharts).
-- **Admin Panel** — Full CRUD for users, with audit log for every sensitive operation.
-- **Rack Lifecycle** — Register, update tests, add comments, clean racks, and export data.
-- **Excel Export** — Download work order data as `.xlsx` for offline analysis.
-- **Responsive UI** — Glassmorphism navbar + Bootstrap 5 layout, works on desktop and large tablets.
-- **Login Modal** — Lightweight CSS-only login dialog; no full-page redirect needed.
+- **Bay View** — Real-time rack grid with live status (PASS / FAIL / RUNNING / WAITING / PENDING) per rack position (`TR01-01` to `TR01-N`).
+- **Per-Rack Comments** — Technicians and Jr. Engineers leave notes visible to incoming shifts.
+- **Work Order Grouping** — Sr. Engineers and Leaders view consolidated WO progress without navigating rack by rack.
+- **Time Statistics** — Processing times per test, rack, and WO to identify bottlenecks across shifts.
+- **Seamless Shift Handoffs** — Incoming operators see the complete history of every rack from the moment they log in.
+- **Excel Export** — Download WO data as `.xlsx` for offline reporting.
+- **Admin Panel** — User CRUD with role levels, shifts, and bay assignments. Immutable audit log for all sensitive operations.
+- **Lightweight Login** — CSS-only modal dialog; no full-page redirect — ideal for quick sessions on thin clients.
+- **Responsive Low-Resource UI** — Bootstrap 5 with glassmorphism navbar; optimized for modern browsers on limited hardware.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Layer      | Technology                                      |
-|------------|-------------------------------------------------|
-| Backend    | PHP 8+ (procedural + OOP utilities)             |
-| Database   | MySQL / MariaDB                                 |
-| Frontend   | HTML5, CSS3, Bootstrap 5.3, Font Awesome 6      |
-| Charts     | Chart.js, ECharts, FusionCharts                 |
-| Tables     | jQuery DataTables (with Buttons & Editor)       |
-| Auth       | PHP Sessions + SHA1 password hashing            |
-| Export     | FileSaver.js + custom Excel export              |
+| Layer | Technology |
+|---|---|
+| Backend | PHP 8+ (procedural + OOP utilities) |
+| Database | MySQL / MariaDB |
+| Frontend | HTML5, CSS3, Bootstrap 5.3, Font Awesome 6 |
+| Charts | Chart.js, ECharts, FusionCharts |
+| Tables | jQuery DataTables (Buttons + Editor) |
+| Authentication | PHP Sessions + SHA1 hashing |
+| Export | FileSaver.js + custom Excel exporter |
 
 ---
 
@@ -44,51 +59,50 @@ A web-based dashboard for real-time monitoring and management of rack testing in
 
 ```
 generic/
-├── bootstrap.php              # DB connection + session bootstrap
+├── bootstrap.php                  # DB connection + session bootstrap
 ├── config/
-│   ├── functions.php          # Helper functions (status color, migration utils)
-│   ├── queries.php            # Per-location rack + test queries (TR01-01 … TR01-N)
-│   └── unit_config.php        # Unit/site configuration constants
+│   ├── functions.php              # Helpers: status color coding, data migration utils
+│   ├── queries.php                # Per-location rack + test queries (TR01-01 … TR01-N)
+│   └── unit_config.php            # Unit/site configuration constants
 ├── pages/
-│   ├── index.php              # Main dashboard (stats, recent racks, recent tests)
-│   ├── login.php              # Authentication handler
-│   ├── logout.php             # Session destroy + redirect
-│   ├── bay1.php – bay_table.php  # Per-bay rack layout views
-│   ├── status.php             # General floor status overview
-│   ├── stats.php              # Time-based performance statistics
-│   ├── wo_stats.php           # Work order statistics
-│   ├── register_rack.php      # Register a new rack into a location
-│   ├── update_tests.php       # Update test results for a rack
-│   ├── add_comment.php        # Add technician comments
-│   ├── clean_rack.php         # Release/clear a rack from a location
-│   ├── export_wo.php          # Export WO data to Excel
-│   ├── admin_panel.php        # Admin: user management + audit log
-│   ├── modals.php             # Rack detail modal (serial lookup)
-│   └── manual.php             # Inline user manual
+│   ├── index.php                  # Main dashboard (KPIs, recent racks, recent tests)
+│   ├── login.php / logout.php     # Authentication
+│   ├── bay1.php … bay_table.php   # Bay view: live rack layout grid
+│   ├── status.php                 # Full floor general status overview
+│   ├── stats.php                  # Time-based performance statistics
+│   ├── wo_stats.php               # Consolidated Work Order statistics
+│   ├── register_rack.php          # Register a rack into a position
+│   ├── update_tests.php           # Update test results for a rack
+│   ├── add_comment.php            # Add a comment to a rack
+│   ├── clean_rack.php             # Release a position upon completion
+│   ├── export_wo.php              # Export WO data to Excel
+│   ├── admin_panel.php            # User management and audit log
+│   ├── modals.php                 # Rack detail modal (serial number lookup)
+│   └── manual.php                 # Inline user manual
 ├── dist/
 │   ├── Chart.bundle.js / .min.js
-│   └── factory_test_system.sql           # Database schema and seed data
-├── js/                        # Third-party and custom JS libraries
-├── fonts/                     # Font Awesome + Glyphicons
-└── img/                       # UI images and icons
+│   └── factory_test_system.sql    # Database schema and seed data
+├── js/                            # Third-party and custom JS libraries
+├── fonts/                         # Font Awesome + Glyphicons
+└── img/                           # UI images and icons
 ```
 
 ---
 
 ## ⚙️ Installation
 
-### Prerequisites
+### Requirements
 
 - PHP 8.0+
 - MySQL 5.7+ or MariaDB 10.4+
 - Apache or Nginx with `mod_rewrite` enabled
-- Composer _(optional, no external PHP packages required)_
+- Modern browser (Chrome, Firefox, Edge) — no installation required on the thin client
 
 ### Steps
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/fmartinez-cli/Statuspb.git
+   git clone https://github.com/fmartinez-cli/test-dashboard.git
    cd test-dashboard
    ```
 
@@ -100,7 +114,7 @@ generic/
 
 3. **Configure the connection**
 
-   Edit `generic/bootstrap.php` and update the credentials:
+   Edit `generic/bootstrap.php`:
    ```php
    $host     = 'localhost';
    $user     = 'your_db_user';
@@ -108,71 +122,97 @@ generic/
    $database = 'factory_test_system';
    ```
 
-4. **Set virtual host / document root**
+4. **Set up the virtual host**
 
-   Point your web server to the project root. The default internal path is `/Statuspb/`. You can update this in `index.php` and other pages, or configure an Apache/Nginx alias.
+   Point your web server document root to the project directory. The default internal path is `/Statuspb/`. This can be adjusted via an Apache/Nginx alias.
 
 5. **Access the application**
    ```
-   http://localhost/Statuspb/pages/index.php
+   http://your-server/Statuspb/pages/index.php
    ```
 
-> **Default admin account:** Set up via `admin_panel.php` after first login, or seed the `users` table directly using the SQL schema.
+---
+
+## 🗄️ Database — Key Tables
+
+| Table | Description |
+|---|---|
+| `racks` | Rack inventory: serial number, WO, location, model, status |
+| `rack_models` | Model catalog with production unit associations |
+| `test_results` | Per-rack test outcomes with start/end timestamps |
+| `test_catalog` | Master list of available tests and sequence order |
+| `users` | User accounts with role level, shift, bay assignment, and last login |
+| `audit_log` | Immutable log of all administrative operations |
 
 ---
 
-## 🗄️ Database Schema (key tables)
+## 👤 Access Levels
 
-| Table           | Description                                         |
-|-----------------|-----------------------------------------------------|
-| `racks`         | Rack inventory with serial, WO, location, model, status |
-| `rack_models`   | Model catalog with unit associations                |
-| `test_results`  | Per-rack test outcomes with status and timestamps   |
-| `test_catalog`  | Master list of available tests and sequence order   |
-| `users`         | Operator/engineer accounts with level and shift     |
-| `audit_log`     | Immutable log of all admin operations               |
-
----
-
-## 👤 User Levels
-
-| Level | Role              | Permissions                                      |
-|-------|-------------------|--------------------------------------------------|
-| 1     | Technician        | View bays, register/update racks, add comments   |
-| 3     | Engineer / Leader | All of above + statistics, WO reports            |
-| 99    | Administrator     | Full access including user management, audit log |
+| Level | Role | Access |
+|---|---|---|
+| 1 | Technician | View assigned rack, register/update racks, add comments |
+| 2 | Jr. Engineer | Full bay monitoring, comments, shift-by-shift tracking |
+| 3 | Sr. Engineer / Area Leader | Statistics, WO-level views, time reports, full floor visibility |
+| 99 | Administrator | Full access: user management, system config, audit log |
 
 ---
 
 ## 📊 Key Pages
 
-| Page            | URL                  | Description                          |
-|-----------------|----------------------|--------------------------------------|
-| Dashboard       | `/pages/index.php`   | Overview: stats cards + recent data  |
-| Bay View        | `/pages/bay1.php`    | Live rack grid for a specific bay    |
-| General Status  | `/pages/status.php`  | Full floor snapshot                  |
-| Times / Stats   | `/pages/stats.php`   | Rack processing time analytics       |
-| WO Statistics   | `/pages/wo_stats.php`| Work order completion metrics        |
-| Admin Panel     | `/pages/admin_panel.php` | User & system administration     |
+| Page | URL | Description |
+|---|---|---|
+| Dashboard | `/pages/index.php` | Overview: KPI cards + recent racks and tests |
+| Bay View | `/pages/bay1.php` | Live rack grid for a specific bay |
+| General Status | `/pages/status.php` | Full floor snapshot |
+| Times / Stats | `/pages/stats.php` | Rack processing time analytics |
+| WO Statistics | `/pages/wo_stats.php` | Work order completion metrics |
+| Admin Panel | `/pages/admin_panel.php` | User and system administration |
+
+---
+
+## 🔄 Shift Handoff Workflow
+
+```
+Outgoing Shift                        Incoming Shift
+──────────────────────────────────    ──────────────────────────────────
+Technician leaves rack comment   ───► New technician sees full history
+Jr. Engineer updates test result ───► Jr. Engineer resumes from last state
+                                      Sr. Engineer / Leader reviews WO
+                                      regardless of which shift did what
+```
+
+---
+
+## 🖥️ Production Environment
+
+The system was designed and tested to run on limited thin client hardware:
+
+- **Device:** HP Thin Client T620
+- **Processor:** AMD GX-415GA
+- **Memory:** 4.0 GB RAM
+- **Operating System:** Windows 8.1
+- **Access:** Web browser pointing to the central server — no local installation
+
+All logic and data reside on the server; the thin client only renders the interface.
 
 ---
 
 ## 🔒 Security Notes
 
-- Passwords are stored as SHA1 hashes. For production, migrate to `password_hash()` / `password_verify()` with bcrypt.
-- All user inputs are sanitized with `mysqli_real_escape_string` before queries. Consider migrating to PDO prepared statements for stronger protection.
-- Session-based authentication guards all sensitive pages.
-- Admin operations are fully logged in the `audit_log` table.
+- Passwords are stored as SHA1 hashes. For production, migrating to `password_hash()` with bcrypt is recommended.
+- All user inputs are sanitized with `mysqli_real_escape_string`. Migrating to PDO with prepared statements is recommended for stronger protection.
+- Authentication is managed via PHP sessions.
+- All administrative operations are recorded in the `audit_log` table.
 
 ---
 
 ## 🤝 Contributing
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/my-feature`)
-3. Commit your changes (`git commit -m 'Add my feature'`)
+3. Commit your changes (`git commit -m 'feat: description of change'`)
 4. Push to the branch (`git push origin feature/my-feature`)
 5. Open a Pull Request
 
@@ -187,9 +227,9 @@ This project is licensed under the [MIT License](LICENSE).
 ## 👨‍💻 Author
 
 **Fernando Martinez Barbosa**
-- LinkedIn: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-- GitHub: @fmartinez-cli(https://github.com/fmartinez-cli
+- LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
+- GitHub: [@fmartinez-cli](https://github.com/fmartinez-cli)
 
 ---
 
-> _Built to solve a real operational need: giving test engineers and technicians instant visibility into every rack on the floor — from registration to sign-off._
+> _Built to solve a real communication problem in manufacturing: making sure the morning shift technician knows exactly where the night shift technician left off._
