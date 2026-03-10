@@ -17,9 +17,30 @@
 
 ---
 
-## 📸 Screenshots
+## 📸 Visual Tour
 
-> _(Add screenshots of the dashboard, bay view, and statistics panel for maximum visual impact)_
+### 🏠 Dashboard(Screenshot)
+![dashboard_statuspb](https://github.com/user-attachments/assets/330ea59a-72e2-4dc7-8682-d22551176833)
+
+
+### 🔄 Bay Interaction(GIF)
+![bay_interaction](https://github.com/user-attachments/assets/717ebcea-024f-44a8-85af-93653872114b)
+
+
+### 📊 WO Statistics(Screenshot)
+![WO_statics](https://github.com/user-attachments/assets/f6c95fbc-bde5-417e-939a-6317475d1881)
+
+
+### 👑 Admin Panel(Screenshot)
+![admin_panel](https://github.com/user-attachments/assets/23c69b94-ac61-4a36-8fae-ff422b637941)
+
+### 📝 Comments System (GIF)
+![comments](https://github.com/user-attachments/assets/3e224b3b-e4d0-415d-b550-edeb5873e9ed)
+
+
+### 📎 Geral Status (Screenshot)
+![status_general](https://github.com/user-attachments/assets/c65cceaa-5e7b-46a3-bde3-cb4160667115)
+
 
 ---
 
