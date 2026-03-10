@@ -1,8 +1,19 @@
-# 🖥️ Test Dashboard — Manufacturing Communication & Monitoring System
-
-A real-time web communication and traceability system for production floors operating across rotating shifts. Designed for **Technicians, Jr. Engineers, Sr. Engineers, and Area Leaders** to share structured information across 3 to 6 shifts (morning, afternoon, night, and weekends) — without losing context between handoffs.
-
-> ⚡ Optimized to run on **HP T620 Thin Clients** (AMD GX-415GA · 4 GB RAM · Windows 8.1) — no installation required at the workstation.
+<div align="center">
+  
+  # 🖥️ Test Dashboard
+  ### Manufacturing Communication & Monitoring System
+  
+  [![PHP](https://img.shields.io/badge/PHP-8.0%2B-777BB4?style=for-the-badge&logo=php)](https://php.net)
+  [![MySQL](https://img.shields.io/badge/MySQL-5.7%2B-4479A1?style=for-the-badge&logo=mysql)](https://mysql.com)
+  [![Bootstrap](https://img.shields.io/badge/Bootstrap-5.3-7952B3?style=for-the-badge&logo=bootstrap)](https://getbootstrap.com)
+  [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
+  [![Status](https://img.shields.io/badge/Status-Production-brightgreen?style=for-the-badge)]()
+  
+  **Real-time web communication and traceability system for production floors operating across rotating shifts.**
+  
+  [Quick Start](#-quick-start) • [Features](#-features) • [Documentation](#-additional-documentation) • [Contributing](#-contributing)
+  
+</div>
 
 ---
 
@@ -26,7 +37,24 @@ In multi-shift manufacturing environments, critical information about rack statu
 Information flows from the individual rack → bay → Work Order → full line, regardless of which shift generated it.
 
 ---
+## ⚡ Quick Start (2 minutos)
 
+```bash
+# 1. Clone the repository
+git clone https://github.com/fmartinez-cli/test-dashboard.git
+cd test-dashboard
+
+# 2. Create and populate database
+mysql -u root -p -e "CREATE DATABASE factory_test_system;"
+mysql -u root -p factory_test_system < generic/dist/factory_test_system.sql
+
+# 3. Configure database connection
+# Edit generic/bootstrap.php with your credentials
+
+# 4. Start using!
+# Access: http://localhost/Statuspb/
+# Default admin: Clock: 99999 / Password: admin123
+```
 ## 🚀 Features
 
 - **Bay View** — Real-time rack grid with live status (PASS / FAIL / RUNNING / WAITING / PENDING) per rack position (`TR01-01` to `TR01-N`).
@@ -43,15 +71,13 @@ Information flows from the individual rack → bay → Work Order → full line,
 
 ## 🛠️ Tech Stack
 
-| Layer | Technology |
-|---|---|
-| Backend | PHP 8+ (procedural + OOP utilities) |
-| Database | MySQL / MariaDB |
-| Frontend | HTML5, CSS3, Bootstrap 5.3, Font Awesome 6 |
-| Charts | Chart.js, ECharts, FusionCharts |
-| Tables | jQuery DataTables (Buttons + Editor) |
-| Authentication | PHP Sessions + SHA1 hashing |
-| Export | FileSaver.js + custom Excel exporter |
+| Layer | Technology | Icon |
+|:------|:-----------|:----:|
+| **Backend** | PHP 8+ | <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/php.svg" width="20"> |
+| **Database** | MySQL / MariaDB | <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/mysql.svg" width="20"> |
+| **Frontend** | HTML5, CSS3, Bootstrap 5.3 | <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/bootstrap.svg" width="20"> |
+| **Icons** | Font Awesome 6 | <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/fontawesome.svg" width="20"> |
+| **Tables** | jQuery DataTables | <img src="https://cdn.jsdelivr.net/npm/simple-icons@v5/icons/jquery.svg" width="20"> |
 
 ---
 
@@ -205,7 +231,20 @@ All logic and data reside on the server; the thin client only renders the interf
 - All administrative operations are recorded in the `audit_log` table.
 
 ---
+## 📦 Version History
 
+### v2.0.0 (2024)
+- Complete database restructure to `factory_test_system`
+- New glassmorphism UI with Bootstrap 5
+- Added audit_log for all admin actions
+- New statistics pages with Chart.js
+- Excel export functionality
+
+### v1.0.0 (2023)
+- Initial release
+- Basic bay monitoring
+- User authentication
+---
 ## 🤝 Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you'd like to change.
@@ -229,6 +268,10 @@ This project is licensed under the [MIT License](LICENSE).
 **Fernando Martinez Barbosa**
 - LinkedIn: [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
 - GitHub: [@fmartinez-cli](https://github.com/fmartinez-cli)
+  
+**Omar Mora**
+
+**Carlos Agustin Rosales**
 
 ---
 
